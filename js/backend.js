@@ -121,7 +121,7 @@ async function artifactBackend() {
 // ---------------------------------------------------------------- Supabase
 
 async function supabaseBackend() {
-  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm');
+  const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/+esm');
   const sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY, { auth: { flowType: 'pkce' } });
 
   const toUser = (u) =>
